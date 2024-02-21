@@ -23,6 +23,8 @@
 		5B519A0F2B86533C00C63614 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A0E2B86533C00C63614 /* AuthenticationService.swift */; };
 		5B519A142B865E1700C63614 /* LoginIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A132B865E1700C63614 /* LoginIntroView.swift */; };
 		5B519A162B865E1E00C63614 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A152B865E1E00C63614 /* MainTabView.swift */; };
+		5B519A182B86607D00C63614 /* LoginButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A172B86607D00C63614 /* LoginButtonStyle.swift */; };
+		5B519A1A2B86632800C63614 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A192B86632800C63614 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		5B519A102B8654BC00C63614 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		5B519A132B865E1700C63614 /* LoginIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroView.swift; sourceTree = "<group>"; };
 		5B519A152B865E1E00C63614 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5B519A172B86607D00C63614 /* LoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonStyle.swift; sourceTree = "<group>"; };
+		5B519A192B86632800C63614 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				5B519A132B865E1700C63614 /* LoginIntroView.swift */,
+				5B519A192B86632800C63614 /* LoginView.swift */,
+				5B519A172B86607D00C63614 /* LoginButtonStyle.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -350,7 +356,9 @@
 				5B519A0B2B86514D00C63614 /* Appdelegate.swift in Sources */,
 				5B5199CE2B86457400C63614 /* Love365App.swift in Sources */,
 				5B519A0F2B86533C00C63614 /* AuthenticationService.swift in Sources */,
+				5B519A1A2B86632800C63614 /* LoginView.swift in Sources */,
 				5B519A142B865E1700C63614 /* LoginIntroView.swift in Sources */,
+				5B519A182B86607D00C63614 /* LoginButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
