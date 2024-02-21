@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Love365App: App {
+  
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+  @StateObject var container: DIContainer = .init(services: Services())
+  
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          AuthenticatedView(viewModel: .init())
+            .environmentObject(container)
         }
     }
 }

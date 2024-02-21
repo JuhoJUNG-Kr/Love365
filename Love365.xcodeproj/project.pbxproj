@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5B5199CE2B86457400C63614 /* Love365App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CD2B86457400C63614 /* Love365App.swift */; };
-		5B5199D02B86457400C63614 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CF2B86457400C63614 /* ContentView.swift */; };
+		5B5199D02B86457400C63614 /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CF2B86457400C63614 /* AuthenticatedView.swift */; };
 		5B5199D52B86457600C63614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5199D42B86457600C63614 /* Preview Assets.xcassets */; };
 		5B5199DF2B86457600C63614 /* Love365Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199DE2B86457600C63614 /* Love365Tests.swift */; };
 		5B5199E92B86457600C63614 /* Love365UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199E82B86457600C63614 /* Love365UITests.swift */; };
 		5B5199EB2B86457600C63614 /* Love365UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199EA2B86457600C63614 /* Love365UITestsLaunchTests.swift */; };
 		5B5199F82B86497D00C63614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5199F72B86497C00C63614 /* Assets.xcassets */; };
+		5B5199FC2B864DBB00C63614 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199FB2B864DBB00C63614 /* DIContainer.swift */; };
+		5B5199FF2B864DF800C63614 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199FE2B864DF800C63614 /* Services.swift */; };
+		5B519A042B864EB500C63614 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A032B864EB500C63614 /* AuthenticationViewModel.swift */; };
+		5B519A092B86510000C63614 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5B519A082B86510000C63614 /* FirebaseAuth */; };
+		5B519A0B2B86514D00C63614 /* Appdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A0A2B86514D00C63614 /* Appdelegate.swift */; };
+		5B519A0D2B86524E00C63614 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B519A0C2B86524E00C63614 /* GoogleService-Info.plist */; };
+		5B519A0F2B86533C00C63614 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A0E2B86533C00C63614 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		5B5199CA2B86457400C63614 /* Love365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Love365.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5199CD2B86457400C63614 /* Love365App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365App.swift; sourceTree = "<group>"; };
-		5B5199CF2B86457400C63614 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B5199CF2B86457400C63614 /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
 		5B5199D42B86457600C63614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B5199DA2B86457600C63614 /* Love365Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Love365Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5199DE2B86457600C63614 /* Love365Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365Tests.swift; sourceTree = "<group>"; };
@@ -44,6 +51,13 @@
 		5B5199E82B86457600C63614 /* Love365UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365UITests.swift; sourceTree = "<group>"; };
 		5B5199EA2B86457600C63614 /* Love365UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5B5199F72B86497C00C63614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		5B5199F92B864B8D00C63614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5B5199FB2B864DBB00C63614 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		5B5199FE2B864DF800C63614 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		5B519A032B864EB500C63614 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		5B519A0A2B86514D00C63614 /* Appdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appdelegate.swift; sourceTree = "<group>"; };
+		5B519A0C2B86524E00C63614 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B519A0E2B86533C00C63614 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B519A092B86510000C63614 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				5B5199CD2B86457400C63614 /* Love365App.swift */,
-				5B5199CF2B86457400C63614 /* ContentView.swift */,
+				5B519A0A2B86514D00C63614 /* Appdelegate.swift */,
+				5B5199F92B864B8D00C63614 /* Info.plist */,
+				5B519A0C2B86524E00C63614 /* GoogleService-Info.plist */,
+				5B519A002B864E7400C63614 /* View */,
+				5B5199FA2B864DA500C63614 /* General */,
+				5B5199FD2B864DE400C63614 /* Service */,
 				5B5199F72B86497C00C63614 /* Assets.xcassets */,
 				5B5199D32B86457600C63614 /* Preview Content */,
 			);
@@ -127,6 +147,40 @@
 			path = Love365UITests;
 			sourceTree = "<group>";
 		};
+		5B5199FA2B864DA500C63614 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5B5199FB2B864DBB00C63614 /* DIContainer.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5B5199FD2B864DE400C63614 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B5199FE2B864DF800C63614 /* Services.swift */,
+				5B519A0E2B86533C00C63614 /* AuthenticationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5B519A002B864E7400C63614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B519A012B864E7B00C63614 /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B519A012B864E7B00C63614 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5B5199CF2B86457400C63614 /* AuthenticatedView.swift */,
+				5B519A032B864EB500C63614 /* AuthenticationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +197,9 @@
 			dependencies = (
 			);
 			name = Love365;
+			packageProductDependencies = (
+				5B519A082B86510000C63614 /* FirebaseAuth */,
+			);
 			productName = Love365;
 			productReference = 5B5199CA2B86457400C63614 /* Love365.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 5B5199C12B86457400C63614;
+			packageReferences = (
+				5B519A072B86510000C63614 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5B5199CB2B86457400C63614 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5199D52B86457600C63614 /* Preview Assets.xcassets in Resources */,
+				5B519A0D2B86524E00C63614 /* GoogleService-Info.plist in Resources */,
 				5B5199F82B86497D00C63614 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5199D02B86457400C63614 /* ContentView.swift in Sources */,
+				5B5199D02B86457400C63614 /* AuthenticatedView.swift in Sources */,
+				5B519A042B864EB500C63614 /* AuthenticationViewModel.swift in Sources */,
+				5B5199FF2B864DF800C63614 /* Services.swift in Sources */,
+				5B5199FC2B864DBB00C63614 /* DIContainer.swift in Sources */,
+				5B519A0B2B86514D00C63614 /* Appdelegate.swift in Sources */,
 				5B5199CE2B86457400C63614 /* Love365App.swift in Sources */,
+				5B519A0F2B86533C00C63614 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +491,11 @@
 				DEVELOPMENT_TEAM = R8DA69Y9YC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Love365/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +520,11 @@
 				DEVELOPMENT_TEAM = R8DA69Y9YC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Love365/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B519A072B86510000C63614 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B519A082B86510000C63614 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B519A072B86510000C63614 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B5199C22B86457400C63614 /* Project object */;
 }
