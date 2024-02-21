@@ -15,7 +15,7 @@ struct Love365App: App {
   
     var body: some Scene {
         WindowGroup {
-          AuthenticatedView(viewModel: .init())
+          AuthenticatedView(viewModel: .init(container: container))
             .environmentObject(container)
         }
     }

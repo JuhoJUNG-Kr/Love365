@@ -21,6 +21,8 @@
 		5B519A0B2B86514D00C63614 /* Appdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A0A2B86514D00C63614 /* Appdelegate.swift */; };
 		5B519A0D2B86524E00C63614 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B519A0C2B86524E00C63614 /* GoogleService-Info.plist */; };
 		5B519A0F2B86533C00C63614 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A0E2B86533C00C63614 /* AuthenticationService.swift */; };
+		5B519A142B865E1700C63614 /* LoginIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A132B865E1700C63614 /* LoginIntroView.swift */; };
+		5B519A162B865E1E00C63614 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B519A152B865E1E00C63614 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		5B519A0C2B86524E00C63614 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B519A0E2B86533C00C63614 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5B519A102B8654BC00C63614 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		5B519A132B865E1700C63614 /* LoginIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroView.swift; sourceTree = "<group>"; };
+		5B519A152B865E1E00C63614 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				5B519A012B864E7B00C63614 /* Authentication */,
+				5B519A112B865DE900C63614 /* Login */,
+				5B519A122B865DF000C63614 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +187,22 @@
 				5B519A032B864EB500C63614 /* AuthenticationViewModel.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5B519A112B865DE900C63614 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5B519A132B865E1700C63614 /* LoginIntroView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5B519A122B865DF000C63614 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5B519A152B865E1E00C63614 /* MainTabView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,11 +344,13 @@
 			files = (
 				5B5199D02B86457400C63614 /* AuthenticatedView.swift in Sources */,
 				5B519A042B864EB500C63614 /* AuthenticationViewModel.swift in Sources */,
+				5B519A162B865E1E00C63614 /* MainTabView.swift in Sources */,
 				5B5199FF2B864DF800C63614 /* Services.swift in Sources */,
 				5B5199FC2B864DBB00C63614 /* DIContainer.swift in Sources */,
 				5B519A0B2B86514D00C63614 /* Appdelegate.swift in Sources */,
 				5B5199CE2B86457400C63614 /* Love365App.swift in Sources */,
 				5B519A0F2B86533C00C63614 /* AuthenticationService.swift in Sources */,
+				5B519A142B865E1700C63614 /* LoginIntroView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
