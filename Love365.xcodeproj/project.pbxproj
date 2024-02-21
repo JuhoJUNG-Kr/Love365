@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5B5199CE2B86457400C63614 /* Love365App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CD2B86457400C63614 /* Love365App.swift */; };
 		5B5199D02B86457400C63614 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CF2B86457400C63614 /* ContentView.swift */; };
-		5B5199D22B86457600C63614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5199D12B86457600C63614 /* Assets.xcassets */; };
 		5B5199D52B86457600C63614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5199D42B86457600C63614 /* Preview Assets.xcassets */; };
 		5B5199DF2B86457600C63614 /* Love365Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199DE2B86457600C63614 /* Love365Tests.swift */; };
 		5B5199E92B86457600C63614 /* Love365UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199E82B86457600C63614 /* Love365UITests.swift */; };
 		5B5199EB2B86457600C63614 /* Love365UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199EA2B86457600C63614 /* Love365UITestsLaunchTests.swift */; };
+		5B5199F82B86497D00C63614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5199F72B86497C00C63614 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 		5B5199CA2B86457400C63614 /* Love365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Love365.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5199CD2B86457400C63614 /* Love365App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365App.swift; sourceTree = "<group>"; };
 		5B5199CF2B86457400C63614 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5B5199D12B86457600C63614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5199D42B86457600C63614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B5199DA2B86457600C63614 /* Love365Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Love365Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5199DE2B86457600C63614 /* Love365Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365Tests.swift; sourceTree = "<group>"; };
 		5B5199E42B86457600C63614 /* Love365UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Love365UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5199E82B86457600C63614 /* Love365UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365UITests.swift; sourceTree = "<group>"; };
 		5B5199EA2B86457600C63614 /* Love365UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5B5199F72B86497C00C63614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			children = (
 				5B5199CD2B86457400C63614 /* Love365App.swift */,
 				5B5199CF2B86457400C63614 /* ContentView.swift */,
-				5B5199D12B86457600C63614 /* Assets.xcassets */,
+				5B5199F72B86497C00C63614 /* Assets.xcassets */,
 				5B5199D32B86457600C63614 /* Preview Content */,
 			);
 			path = Love365;
@@ -232,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5199D52B86457600C63614 /* Preview Assets.xcassets in Resources */,
-				5B5199D22B86457600C63614 /* Assets.xcassets in Resources */,
+				5B5199F82B86497D00C63614 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
