@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1D0D5A2B876E03002EA5CA /* Secret.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5B1D0D592B876E03002EA5CA /* Secret.xcconfig */; };
 		5B5199CE2B86457400C63614 /* Love365App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CD2B86457400C63614 /* Love365App.swift */; };
 		5B5199D02B86457400C63614 /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5199CF2B86457400C63614 /* AuthenticatedView.swift */; };
 		5B5199D52B86457600C63614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5199D42B86457600C63614 /* Preview Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1D0D592B876E03002EA5CA /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		5B5199CA2B86457400C63614 /* Love365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Love365.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5199CD2B86457400C63614 /* Love365App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love365App.swift; sourceTree = "<group>"; };
 		5B5199CF2B86457400C63614 /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
@@ -71,7 +73,6 @@
 		5B519A0A2B86514D00C63614 /* Appdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appdelegate.swift; sourceTree = "<group>"; };
 		5B519A0C2B86524E00C63614 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B519A0E2B86533C00C63614 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
-		5B519A102B8654BC00C63614 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		5B519A132B865E1700C63614 /* LoginIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroView.swift; sourceTree = "<group>"; };
 		5B519A152B865E1E00C63614 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		5B519A172B86607D00C63614 /* LoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonStyle.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		5B5199C12B86457400C63614 = {
 			isa = PBXGroup;
 			children = (
+				5B1D0D592B876E03002EA5CA /* Secret.xcconfig */,
 				5B5199CC2B86457400C63614 /* Love365 */,
 				5B5199DD2B86457600C63614 /* Love365Tests */,
 				5B5199E72B86457600C63614 /* Love365UITests */,
@@ -148,7 +150,6 @@
 				5B519A232B86709D00C63614 /* Util */,
 				5B5199F72B86497C00C63614 /* Assets.xcassets */,
 				5B5199D32B86457600C63614 /* Preview Content */,
-				5B519A102B8654BC00C63614 /* Secrets.xcconfig */,
 			);
 			path = Love365;
 			sourceTree = "<group>";
@@ -373,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1D0D5A2B876E03002EA5CA /* Secret.xcconfig in Resources */,
 				5B5199D52B86457600C63614 /* Preview Assets.xcassets in Resources */,
 				5B519A0D2B86524E00C63614 /* GoogleService-Info.plist in Resources */,
 				5B5199F82B86497D00C63614 /* Assets.xcassets in Resources */,
@@ -453,6 +455,7 @@
 /* Begin XCBuildConfiguration section */
 		5B5199EC2B86457600C63614 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1D0D592B876E03002EA5CA /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -516,6 +519,7 @@
 		};
 		5B5199ED2B86457600C63614 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1D0D592B876E03002EA5CA /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -572,7 +576,6 @@
 		};
 		5B5199EF2B86457600C63614 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B519A102B8654BC00C63614 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,6 +585,7 @@
 				DEVELOPMENT_TEAM = R8DA69Y9YC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				GOOGLE_API_KEY = "$(GOOGLE_API_KEY)";
 				INFOPLIST_FILE = Love365/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -602,7 +606,6 @@
 		};
 		5B5199F02B86457600C63614 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B519A102B8654BC00C63614 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -612,6 +615,7 @@
 				DEVELOPMENT_TEAM = R8DA69Y9YC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				GOOGLE_API_KEY = "$(GOOGLE_API_KEY)";
 				INFOPLIST_FILE = Love365/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

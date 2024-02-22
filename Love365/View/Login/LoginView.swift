@@ -28,7 +28,7 @@ struct LoginView: View {
       Spacer()
       
       Button {
-        //google
+        authViewModel.send(action: .googleLogin)
       } label: {
         Text("Sign up with Google")
       }.buttonStyle(LoginButtonStyle(textColor: .black, borderColor: .gray))
