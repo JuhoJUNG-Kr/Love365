@@ -455,7 +455,6 @@
 /* Begin XCBuildConfiguration section */
 		5B5199EC2B86457600C63614 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B1D0D592B876E03002EA5CA /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -519,7 +518,6 @@
 		};
 		5B5199ED2B86457600C63614 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B1D0D592B876E03002EA5CA /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

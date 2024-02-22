@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum AuthenticationState {
   case unAuthenticated
@@ -20,7 +21,10 @@ class AuthenticationViewModel: ObservableObject {
   
   @Published var authenticationState: AuthenticationState = .unAuthenticated
   
+  var userId: String?
+  
   private var container: DIContainer
+  private var subscriptions = Set<AnyCancellable>()
   
   init(container: DIContainer) {
     self.container = container
@@ -29,7 +33,12 @@ class AuthenticationViewModel: ObservableObject {
   func send(action: Action) {
     switch action {
     case .googleLogin:
-      return
+      container.services.authService.signInWithGoogle()
+        .sink { completion in
+          
+        } receiveValue: { [weak self] user in
+          self?.userId = user.id
+        }.store(in: &subscriptions)
     }
   }
 }
