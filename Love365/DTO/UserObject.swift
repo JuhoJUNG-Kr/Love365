@@ -1,13 +1,13 @@
 //
-//  User.swift
+//  UserObject.swift
 //  Love365
 //
-//  Created by 정주호 on 21/02/2024.
+//  Created by 정주호 on 25/02/2024.
 //
 
 import Foundation
 
-struct User {
+struct UserObject: Codable {
   var id: String
   var name: String
   var phoneNumber: String?
@@ -17,8 +17,8 @@ struct User {
   var fcmToken: String?
 }
 
-extension User {
-  func toObject() -> UserObject {
+extension UserObject {
+  func toModel() -> User {
     .init(id: id,
           name: name,
           phoneNumber: phoneNumber,
@@ -27,15 +27,5 @@ extension User {
           birthday: birthday,
           fcmToken: fcmToken
     )
-  }
-}
-
-extension User {
-  static var stub1: User {
-    .init(id: "user1_id", name: "Mike")
-  }
-  
-  static var stub2: User {
-    .init(id: "user2_id", name: "Kim")
   }
 }

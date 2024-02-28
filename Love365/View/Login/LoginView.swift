@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct LoginView: View {
   @Environment(\.dismiss) var dismiss
@@ -32,16 +33,31 @@ struct LoginView: View {
       } label: {
         Text("Sign up with Google")
       }.buttonStyle(LoginButtonStyle(textColor: .black, borderColor: .gray))
+      
+      SignInWithAppleButton { request in
+        authViewModel.send(action: .appleLogin(request))
+      } onCompletion: { result in
+        authViewModel.send(action: .appleLoginCompletion(result))
+      }
+      .frame(height: 40)
+      .padding(.horizontal, 15)
+      .clipShape(RoundedRectangle(cornerRadius: 5))
+      
     }
     .navigationBarBackButtonHidden()
     .toolbar {
-        ToolbarItemGroup(placement: .navigationBarLeading) {
-            Button {
-                dismiss()
-            } label: {
-                Image("back")
-            }
+      ToolbarItemGroup(placement: .navigationBarLeading) {
+        Button {
+          dismiss()
+        } label: {
+          Image("back")
         }
+      }
+    }
+    .overlay {
+      if authViewModel.isLoading {
+        ProgressView()
+      }
     }
   }
 }
