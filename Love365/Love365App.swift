@@ -13,10 +13,10 @@ struct Love365App: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
   @StateObject var container: DIContainer = .init(services: Services())
   
-    var body: some Scene {
-        WindowGroup {
-          AuthenticatedView(viewModel: .init())
-            .environmentObject(container)
-        }
+  var body: some Scene {
+    WindowGroup {
+      AuthenticatedView(authViewModel: .init(container: container))
+        .environmentObject(container)
     }
+  }
 }

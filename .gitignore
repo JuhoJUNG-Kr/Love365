@@ -34,6 +34,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 *.xcconfig
+*.GoogleService-Info.plist
 
 ## Obj-C/Swift specific
 *.hmap
